@@ -13,6 +13,13 @@
 		E05C436215248F53003F5853 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E05C436015248F53003F5853 /* InfoPlist.strings */; };
 		E05C436415248F53003F5853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C436315248F53003F5853 /* main.m */; };
 		E05C436815248F53003F5853 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C436715248F53003F5853 /* AppDelegate.m */; };
+		E05C437115249002003F5853 /* ScoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C437015249002003F5853 /* ScoresTableViewController.m */; };
+		E05C43741524927F003F5853 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C43731524927F003F5853 /* Score.m */; };
+		E05C437615249495003F5853 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E05C437515249495003F5853 /* libsqlite3.0.dylib */; };
+		E05C437915249C07003F5853 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C437815249C07003F5853 /* SQLiteManager.m */; };
+		E05C437C1524A620003F5853 /* database.sql in Resources */ = {isa = PBXBuildFile; fileRef = E05C437B1524A620003F5853 /* database.sql */; };
+		E05C43801524A965003F5853 /* AddScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C437E1524A964003F5853 /* AddScoreViewController.m */; };
+		E05C43811524A965003F5853 /* AddScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05C437F1524A964003F5853 /* AddScoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +27,23 @@
 		E05C435715248F53003F5853 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E05C435915248F53003F5853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E05C435B15248F53003F5853 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E05C435F15248F53003F5853 /* SQLite-Info.plist */ = {isa = PBXFileReference; path = "SQLite-Info.plist"; sourceTree = "<group>"; };
+		E05C435F15248F53003F5853 /* SQLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQLite-Info.plist"; sourceTree = "<group>"; };
 		E05C436115248F53003F5853 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E05C436315248F53003F5853 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E05C436515248F53003F5853 /* SQLite-Prefix.pch */ = {isa = PBXFileReference; path = "SQLite-Prefix.pch"; sourceTree = "<group>"; };
-		E05C436615248F53003F5853 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E05C436515248F53003F5853 /* SQLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLite-Prefix.pch"; sourceTree = "<group>"; };
+		E05C436615248F53003F5853 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E05C436715248F53003F5853 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E05C436F15249002003F5853 /* ScoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresTableViewController.h; sourceTree = "<group>"; };
+		E05C437015249002003F5853 /* ScoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresTableViewController.m; sourceTree = "<group>"; };
+		E05C43721524927F003F5853 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		E05C43731524927F003F5853 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		E05C437515249495003F5853 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E05C437715249C07003F5853 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		E05C437815249C07003F5853 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
+		E05C437B1524A620003F5853 /* database.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sql; sourceTree = "<group>"; };
+		E05C437D1524A964003F5853 /* AddScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScoreViewController.h; sourceTree = "<group>"; };
+		E05C437E1524A964003F5853 /* AddScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScoreViewController.m; sourceTree = "<group>"; };
+		E05C437F1524A964003F5853 /* AddScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddScoreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05C437615249495003F5853 /* libsqlite3.0.dylib in Frameworks */,
 				E05C435815248F53003F5853 /* UIKit.framework in Frameworks */,
 				E05C435A15248F53003F5853 /* Foundation.framework in Frameworks */,
 				E05C435C15248F53003F5853 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +81,7 @@
 		E05C435615248F53003F5853 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E05C437515249495003F5853 /* libsqlite3.0.dylib */,
 				E05C435715248F53003F5853 /* UIKit.framework */,
 				E05C435915248F53003F5853 /* Foundation.framework */,
 				E05C435B15248F53003F5853 /* CoreGraphics.framework */,
@@ -74,7 +94,17 @@
 			children = (
 				E05C436615248F53003F5853 /* AppDelegate.h */,
 				E05C436715248F53003F5853 /* AppDelegate.m */,
+				E05C436F15249002003F5853 /* ScoresTableViewController.h */,
+				E05C437015249002003F5853 /* ScoresTableViewController.m */,
 				E05C435E15248F53003F5853 /* Supporting Files */,
+				E05C43721524927F003F5853 /* Score.h */,
+				E05C43731524927F003F5853 /* Score.m */,
+				E05C437715249C07003F5853 /* SQLiteManager.h */,
+				E05C437815249C07003F5853 /* SQLiteManager.m */,
+				E05C437B1524A620003F5853 /* database.sql */,
+				E05C437D1524A964003F5853 /* AddScoreViewController.h */,
+				E05C437E1524A964003F5853 /* AddScoreViewController.m */,
+				E05C437F1524A964003F5853 /* AddScoreViewController.xib */,
 			);
 			path = SQLite;
 			sourceTree = "<group>";
@@ -141,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05C436215248F53003F5853 /* InfoPlist.strings in Resources */,
+				E05C437C1524A620003F5853 /* database.sql in Resources */,
+				E05C43811524A965003F5853 /* AddScoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +185,10 @@
 			files = (
 				E05C436415248F53003F5853 /* main.m in Sources */,
 				E05C436815248F53003F5853 /* AppDelegate.m in Sources */,
+				E05C437115249002003F5853 /* ScoresTableViewController.m in Sources */,
+				E05C43741524927F003F5853 /* Score.m in Sources */,
+				E05C437915249C07003F5853 /* SQLiteManager.m in Sources */,
+				E05C43801524A965003F5853 /* AddScoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
